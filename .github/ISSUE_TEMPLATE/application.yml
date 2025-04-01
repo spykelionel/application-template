@@ -17,34 +17,10 @@
 #/
 
 name: 🚀 Application
-description: I'd like to apply to Google Summer of Code to work on stdlib!
-title: "[RFC]: "
-labels: ["rfc", "2025"]
+description: I'd like to submit my final application for Outreachy!
+title: "[Project]: "
+labels: ["Outreachy", "May 2025"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to complete this application!
-
-        A few general notes:
-
-        1.  Before working on your proposal, be sure to read through [instructions](https://github.com/stdlib-js/google-summer-of-code/blob/main/README.md) first!
-
-        1.  We will **not** tolerate plagiarism of any kind. Please write your proposal in your own words. If we find that you have plagiarized application content, we will reject your application without review.
-
-        1.  To be considered, a GSoC application **must** have a written proposal submitted to <https://summerofcode.withgoogle.com/>. The purpose of creating this issue is to allow stdlib mentors to provide feedback and answer any questions you have regarding your prospective project proposal. Note, however, that we will **not** write your proposal for you. You, and you alone, are responsible for writing, and the timely submission of, your project proposal.
-
-        1.  Please use a succinct name to describe your proposal. This issue should use the following issue naming convention:
-
-            -   \[RFC]: the succinct name describing your proposal
-
-            For example,
-
-            -   \[RFC]: improve tiling algorithms for element-wise ndarray iteration
-            -   \[RFC]: build a developer dashboard for tracking repository build status
-
-        1.  In your proposal, you should include the following information, as described below.
-
   - type: markdown
     attributes:
       value: |
@@ -61,41 +37,6 @@ body:
       placeholder: e.g., Jane Doe
     validations:
       required: true
-
-  - type: dropdown
-    id: enrollment
-    attributes:
-      label: University status
-      description: Are you currently enrolled at a university?
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true
-
-  - type: input
-    id: university
-    attributes:
-      label: University name
-      description: If you are enrolled at a university, what is the name of that university?
-    validations:
-      required: false
-
-  - type: input
-    id: area_of_study
-    attributes:
-      label: University program
-      description: If you are enrolled at a university, what is your area of study?
-    validations:
-      required: false
-
-  - type: input
-    id: expected_graduation
-    attributes:
-      label: Expected graduation
-      description: If you are enrolled at a university, when is your expected graduation date?
-    validations:
-      required: false
 
   - type: textarea
     id: bio
@@ -132,64 +73,11 @@ body:
 
         Help us understand your programming experience! Don't worry if you are relatively new to programming. Many contributors start fresh, and we can help teach you what you need to know. :smile:
 
-  - type: dropdown
-    id: tech_platform
-    attributes:
-      label: Platform
-      description: What platform do you use to code?
-      options:
-        - Mac
-        - Linux
-        - Windows
-        - Other
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_editor
-    attributes:
-      label: Editor
-      description: What is your preferred code editor (e.g., VSCode, Sublime Text, Vim, Emacs, etc) and why?
-    validations:
-      required: true
-
   - type: textarea
     id: tech_experience
     attributes:
       label: Programming experience
       description: What is your experience programming? Tell us about something that you've created!
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_javascript
-    attributes:
-      label: JavaScript experience
-      description: What is your experience with JavaScript? What is your favorite feature of JavaScript? What is your least favorite feature of JavaScript?
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_nodejs
-    attributes:
-      label: Node.js experience
-      description: What is your experience with Node.js?
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_native
-    attributes:
-      label: C/Fortran experience
-      description: What is your experience with C and/or Fortran?
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_stdlib
-    attributes:
-      label: Interest in stdlib
-      description: What interests you about stdlib? Do you have a favorite feature or example? If so, tell us more!
     validations:
       required: true
 
@@ -205,18 +93,10 @@ body:
       required: true
 
   - type: textarea
-    id: tech_stdlib_contributions
+    id: tech_project_contributions
     attributes:
-      label: Contributions to stdlib
-      description: Please provide a brief summary of your contributions to stdlib thus far, including any unmerged work. This should be a list of pull requests and an indication as to whether each pull request is merged, closed, or still open. If you made significant contributions outside of your pull requests (e.g., reviewing someone else's pull request), you may list that as well.
-    validations:
-      required: true
-
-  - type: textarea
-    id: tech_stdlib_showcase
-    attributes:
-      label: stdlib showcase
-      description: Please provide a brief summary of how you've used stdlib and explored its functionality. This should be a list of one or more repositories in which you've created demos, tutorials, how-to guides, and/or showcases using stdlib. Please do not include forks of the main stdlib repository or forks of other someone else's demos in an attempt to pass them off as your own. Any showcases should be your own original work.
+      label: Contributions to Project
+      description: Please provide a brief summary of your contributions
     validations:
       required: true
 
@@ -258,14 +138,6 @@ body:
     attributes:
       label: Qualifications
       description: What qualifications do you have to execute on your proposal? How are you suited to work on this project? For example, if you are interested in implementing statistical hypothesis tests, what courses have you taken or books have you read on statistics?
-    validations:
-      required: true
-
-  - type: textarea
-    id: proposal_prior_art
-    attributes:
-      label: Prior art
-      description: "How have other people achieved the aims of this project? Has the project been implemented before (e.g., in another programming language or library)? Are there are papers or blog posts about it? (hint: this is likely!)"
     validations:
       required: true
 
@@ -322,37 +194,3 @@ body:
         - During the final week, you'll be submitting your project.
     validations:
       required: true
-
-  - type: textarea
-    id: related_issues
-    attributes:
-      label: Related issues
-      description: Does this proposal have any related issues (e.g., a proposal idea issue or upstream issues in the main stdlib project or website repositories)? If so, please link to those issues below.
-    validations:
-      required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        * * *
-
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      description: Please ensure the following tasks are completed before submitting a project proposal.
-      options:
-        - label: I have read and understood the [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md).
-          required: true
-        - label: I have read and understood the application materials found in this repository.
-          required: true
-        - label: I understand that plagiarism will not be tolerated, and I have authored this application in my own words.
-          required: true
-        - label: I have read and understood the [patch requirement](https://github.com/stdlib-js/google-summer-of-code/blob/main/README.md#patch-requirement) which is necessary for my application to be considered for acceptance.
-          required: true
-        - label: I have read and understood the [stdlib showcase requirement](https://github.com/stdlib-js/google-summer-of-code/blob/main/README.md#showcase-requirement) which is necessary for my application to be considered for acceptance.
-          required: true
-        - label: The issue name begins with `[RFC]:` and succinctly describes your proposal.
-          required: true
-        - label: I understand that, in order to apply to be a GSoC contributor, I must submit my final application to <https://summerofcode.withgoogle.com/> **before** the submission deadline.
-          required: true
